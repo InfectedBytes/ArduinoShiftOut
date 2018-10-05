@@ -44,7 +44,7 @@ void loop() {
 ```
 ![Breadboard layout for one shift register](ShiftOut/examples/ShiftRegister/layout.png)
 
-If you want to use two shift registers, you only have to change the declaration from `ShiftOut<1> shift;` to `ShiftOut<2> shift;` and then you just daisy chain your 74HC595.
+If you want to use two shift registers, you only have to change the declaration from `ShiftOut<1> shift;` to `ShiftOut<2> shift;` and then you just daisy chain your 74HC595. To daisy chain two 74HC595's, use a wire to connect the clock pin (11) of second shifter to the first one. Do the same with the latch pin (12). Now, connect the data pin (14) of the second one to the serial data output (9) of the first one.
 
 # API
 Depending on the number of chips, this library will use different data types.
