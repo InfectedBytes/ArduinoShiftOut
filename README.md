@@ -46,7 +46,7 @@ void loop() {
 
 If you want to use two shift registers, you only have to change the declaration from `ShiftOut<1> shift;` to `ShiftOut<2> shift;` and then you just daisy chain your 74HC595. To daisy chain two 74HC595's, use a wire to connect the clock pin (11) of second shifter to the first one. Do the same with the latch pin (12). Now, connect the data pin (14) of the second one to the serial data output (9) of the first one.
 
-# API
+## API
 Depending on the number of chips, this library will use different data types.
 If you are only using one chip, the type `ShiftType` will be an `unsigned byte` (`uint8_t`). For two chips it will be an `unsigned int` (`uint16_t`). For three and four chips it will be an `unsigned long` (`uint32_t`) and for 5 to 8 chips it will be an `unsigned long long` (`uint64_t`). More than eight chips are not supported yet.
 
@@ -89,3 +89,7 @@ Sets the state to the given parameter and calls `write()`:
 ```
 ShiftType write(ShiftType state)
 ```
+
+## License
+
+[MIT License](LICENSE)
