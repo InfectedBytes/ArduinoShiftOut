@@ -4,6 +4,8 @@ This is a small library for writing out values to a 74HC595 8 bit shift register
 The Arduino has only a limited amount of pins, therefore it might happen that you run out of pins.
 For this case, the 74HC595 comes to the rescue. It is an 8 bit shift register. It allows you to write out 8 values by only using 3 pins on your Arduino. Furthermore you can daisy-chain several shift registers by still only using 3 Arduino Pins.
 
+Try it out in the Wokwi Arduino Simulator: [ShiftOut Simulation](https://wokwi.com/arduino/projects/309634438248006209)
+
 ## Easy install (zip import)
 The easiest way to install this library is by downloading the newest release and then importing it.
 You don't have to unzip it. Just open your Arduino IDE and navigate to *Sketch* > *Include Library* > *Add .ZIP* and then select the zip file.
